@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9ede220ee25918468e113d4582a1933, type: 3}
+  m_Name: ChestPrompt
+  m_EditorClassIdentifier: 
+  label: Open?
+  options:
+  - optionText: Yes
+    optionEvent: {fileID: 11400000, guid: e021291e18e469e4696e004503a488e5, type: 2}
+  - optionText: No
+    optionEvent: {fileID: 11400000, guid: 892c7edeb59b2644d98c57a8436c3487, type: 2}
