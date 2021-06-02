@@ -56,16 +56,19 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Logic\ScriptableObjects\Data\Prompt\PromptData.cs" />
     <Compile Include="Assets\Logic\Scripts\DisplayTime.cs" />
     <Compile Include="Assets\Logic\ScriptableObjects\InventorySystem\ItemsDataBase.cs" />
     <Compile Include="Assets\Logic\GameEventsSystem\Listeners\VoidListener.cs" />
     <Compile Include="Assets\Logic\ScriptableObjects\InventorySystem\KeyItem.cs" />
+    <Compile Include="Assets\Logic\GameEventsSystem\Events\ItemEvent.cs" />
     <Compile Include="Assets\Logic\Scripts\ChestManager.cs" />
     <Compile Include="Assets\Logic\Scripts\HighScore.cs" />
     <Compile Include="Assets\Logic\GameEventsSystem\Listeners\BaseGameEventListener.cs" />
     <Compile Include="Assets\Logic\GameEventsSystem\Void.cs" />
     <Compile Include="Assets\Logic\GameEventsSystem\Events\VoidEvent.cs" />
-    <Compile Include="Assets\Logic\Scripts\PromptManager2Options.cs" />
+    <Compile Include="Assets\Logic\Scripts\PromptTwoOptions.cs" />
+    <Compile Include="Assets\Logic\GameEventsSystem\Listeners\ItemListener.cs" />
     <Compile Include="Assets\Logic\GameEventsSystem\Listeners\IGameEventListener.cs" />
     <Compile Include="Assets\Logic\Scripts\ClickableObject.cs" />
     <Compile Include="Assets\Logic\GameEventsSystem\UnityEvents\UnityVoidEvent.cs" />
@@ -77,14 +80,15 @@
     <Compile Include="Assets\Logic\ScriptableObjects\InventorySystem\Item.cs" />
     <Compile Include="Assets\Logic\Scripts\MenuManager.cs" />
     <Compile Include="Assets\Logic\Scripts\PlayerInventory.cs" />
-    <Compile Include="Assets\Logic\Scripts\CursorManager.cs" />
-    <Compile Include="Assets\Logic\ScriptableObjects\Data\Prompt\PromptData.cs" />
-    <Compile Include="Assets\Logic\GameEventsSystem\Events\ItemEvent.cs" />
-    <Compile Include="Assets\Logic\GameEventsSystem\UnityEvents\UnityItemEvent.cs" />
-    <Compile Include="Assets\Logic\GameEventsSystem\Listeners\ItemListener.cs" />
     <Compile Include="Assets\Logic\Scripts\ItemsOnSceneManager.cs" />
-    <Compile Include="Assets\Logic\Scripts\DestroySelf.cs" />
-    <Compile Include="Assets\EscapeManager.cs" />
+    <Compile Include="Assets\Logic\GameEventsSystem\UnityEvents\UnityItemEvent.cs" />
+    <Compile Include="Assets\Logic\Scripts\CursorManager.cs" />
+    <Compile Include="Assets\ItemGem.cs" />
+    <Compile Include="Assets\Logic\Scripts\ClickableDoor.cs" />
+    <Compile Include="Assets\DoorManager.cs" />
+    <Compile Include="Assets\ClickableObjectManager.cs" />
+    <Compile Include="Assets\Logic\Scripts\Prompt.cs" />
+    <Compile Include="Assets\PromptOneOption.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Packages\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -23,10 +23,7 @@ public class PlayerInventory : MonoBehaviour
     }
 
 
-    [ContextMenu("Add key")]
-    public bool addItem(Item itemToAdd) {
-        //Item itemToAdd = database.items[0];
-        
+    public bool AddItem(Item itemToAdd) {
         for (int i = 0; i < inventory.Length; i++) {
             if (inventory[i] == database.BlackItem) {
                 inventory[i] = itemToAdd;
@@ -35,6 +32,15 @@ public class PlayerInventory : MonoBehaviour
             } 
         }
         return false;
+    }
 
+    public bool FindAndConsume(Item itemToConsume) {
+        for (int i = 0; i < inventory.Length; i++) {
+            if (inventory[i] == itemToConsume) {
+                inventory[i] = database.BlackItem;
+                return true;
+            }
+        }
+        return false;
     }
 }
