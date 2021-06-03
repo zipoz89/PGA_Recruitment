@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     }
 
     private void Update() {
-        if (isActive) {
+        if (isActive && controller.enabled) {
             MovePlayer();
             RotatePlayer();
         }

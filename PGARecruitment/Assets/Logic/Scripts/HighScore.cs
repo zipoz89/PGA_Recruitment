@@ -17,5 +17,9 @@ public static class HighScore
         }
         return false;
 
-    } 
+    }
+    //for dev use only
+    public static void SetHighScoreUncoditionly(float score) {
+        PlayerPrefs.SetFloat("HighScore", score);
+    }
 }

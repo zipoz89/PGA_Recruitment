@@ -67,9 +67,13 @@
     <Compile Include="Assets\Logic\GameEventsSystem\Listeners\BaseGameEventListener.cs" />
     <Compile Include="Assets\Logic\GameEventsSystem\Void.cs" />
     <Compile Include="Assets\Logic\GameEventsSystem\Events\VoidEvent.cs" />
+    <Compile Include="Assets\Logic\Scripts\PromptOneOption.cs" />
     <Compile Include="Assets\Logic\Scripts\PromptTwoOptions.cs" />
+    <Compile Include="Assets\Logic\Scripts\ItemGem.cs" />
     <Compile Include="Assets\Logic\GameEventsSystem\Listeners\ItemListener.cs" />
     <Compile Include="Assets\Logic\GameEventsSystem\Listeners\IGameEventListener.cs" />
+    <Compile Include="Assets\Logic\Scripts\ClickableObjectManager.cs" />
+    <Compile Include="Assets\Logic\Scripts\Prompt.cs" />
     <Compile Include="Assets\Logic\Scripts\ClickableObject.cs" />
     <Compile Include="Assets\Logic\GameEventsSystem\UnityEvents\UnityVoidEvent.cs" />
     <Compile Include="Assets\Logic\GameEventsSystem\Events\BaseGameEvent.cs" />
@@ -77,18 +81,15 @@
     <Compile Include="Assets\Logic\Scripts\Timer.cs" />
     <Compile Include="Assets\Packages\QuickOutline\Scripts\Outline.cs" />
     <Compile Include="Assets\Logic\ScriptableObjects\InventorySystem\DefaultKey.cs" />
+    <Compile Include="Assets\Logic\Scripts\DoorManager.cs" />
     <Compile Include="Assets\Logic\ScriptableObjects\InventorySystem\Item.cs" />
     <Compile Include="Assets\Logic\Scripts\MenuManager.cs" />
     <Compile Include="Assets\Logic\Scripts\PlayerInventory.cs" />
-    <Compile Include="Assets\Logic\Scripts\ItemsOnSceneManager.cs" />
+    <Compile Include="Assets\Logic\Scripts\ClickableDoor.cs" />
     <Compile Include="Assets\Logic\GameEventsSystem\UnityEvents\UnityItemEvent.cs" />
     <Compile Include="Assets\Logic\Scripts\CursorManager.cs" />
-    <Compile Include="Assets\ItemGem.cs" />
-    <Compile Include="Assets\Logic\Scripts\ClickableDoor.cs" />
-    <Compile Include="Assets\DoorManager.cs" />
-    <Compile Include="Assets\ClickableObjectManager.cs" />
-    <Compile Include="Assets\Logic\Scripts\Prompt.cs" />
-    <Compile Include="Assets\PromptOneOption.cs" />
+    <Compile Include="Assets\GameStateManager.cs" />
+    <Compile Include="Assets\Logic\Scripts\MenuPrompt.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Packages\TextMesh Pro\Shaders\TMPro.cginc" />

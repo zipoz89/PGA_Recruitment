@@ -23,6 +23,7 @@ public class Timer : MonoBehaviour
         background.color = new Color(recordTimeColor.r, recordTimeColor.g, recordTimeColor.b, BGAlpha/255);
         record = HighScore.GetHighScore();
         if (record == 0) record = float.MaxValue;
+        //StartTimer();
     }
 
     [ContextMenu("Start Timer")]
@@ -31,12 +32,17 @@ public class Timer : MonoBehaviour
         isCounting = true;
     }
 
+    [ContextMenu("Reset Highscore")]
+    public void ResetRecord() {
+        HighScore.SetHighScoreUncoditionly(float.MaxValue);
+    }
+
     [ContextMenu("Stop Timer")]
     public bool StopTimerAndGetScore() {
-        isCounting = false;
-        Debug.Log( HighScore.SetHighScoreIfPossible(elapsedTime));
+        isCounting = false;        Debug.Log( HighScore.SetHighScoreIfPossible(elapsedTime));
         return false;
     }
+
     [SerializeField] private int precision = 3;
     private void Update() {
 

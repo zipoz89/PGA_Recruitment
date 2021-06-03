@@ -12,19 +12,20 @@ public enum CursorStyle {
 public class CursorManager : MonoBehaviour {
     public CursorStyle currentStyle;
     //need to be in the same order as CursorStyle
-    [SerializeField] private Texture2D[] cursors; 
+    [SerializeField] private static List<Texture2D> cursors = new List<Texture2D>();
+    [SerializeField] private Texture2D[] nonStaticCursors;
+    private void Awake() {
+
+        for (int i = 0; i < nonStaticCursors.Length; i++) {
+            cursors.Add(nonStaticCursors[i]);
+        }
+    }
+
     private void Start() {
         ChangeCursor(currentStyle);
     }
-    public void ChangeCursor(CursorStyle style){
+    public static void ChangeCursor(CursorStyle style){
         Cursor.SetCursor(cursors[(int)Convert.ChangeType(style, style.GetTypeCode())],Vector2.zero,CursorMode.ForceSoftware);
     }
 
-    public void SetCursorBasic() {
-        Cursor.SetCursor(cursors[0], Vector2.zero, CursorMode.ForceSoftware);
-    }
-
-    public void SetCursorHand() {
-        Cursor.SetCursor(cursors[1], Vector2.zero, CursorMode.ForceSoftware);
-    }
 }

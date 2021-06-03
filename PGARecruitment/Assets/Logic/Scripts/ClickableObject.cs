@@ -19,6 +19,7 @@ public class ClickableObject : MonoBehaviour
 
     [SerializeField] private bool isActive = false;
     bool isMouseOver = false;
+    bool isHighlighted = false;
 
     protected virtual void Start()
     {
@@ -34,8 +35,9 @@ public class ClickableObject : MonoBehaviour
         else return false;
     }
     void OnMouseOver() {
-        HighlightObject();
         isMouseOver = true;
+
+        HighlightObject();
     }
 
     void OnMouseExit() {
@@ -49,6 +51,8 @@ public class ClickableObject : MonoBehaviour
 
     public void HighlightObject() {
         if (isActive && IsCloseEnough()) {
+            CursorManager.ChangeCursor(CursorStyle.Hand);
+            isHighlighted = true;
             if (outline != null)
                 outline.OutlineWidth = outlineWidth;
             foreach (Renderer r in objectsToHighlight) {
@@ -58,6 +62,8 @@ public class ClickableObject : MonoBehaviour
     }
 
     public void UnhighlightObject() {
+        isHighlighted = false;
+        CursorManager.ChangeCursor(CursorStyle.Basic);
         if (outline != null)
             outline.OutlineWidth = 0;
         foreach (Renderer r in objectsToHighlight) {
@@ -74,8 +80,9 @@ public class ClickableObject : MonoBehaviour
     }
 
     private void Update() {
-        if (!IsCloseEnough()) {
+        if (!IsCloseEnough() && isHighlighted) {
             UnhighlightObject();
+            //CursorManager.ChangeCursor(CursorStyle.Basic);
         }
 
         if (Input.GetMouseButtonDown(0)&&isMouseOver&& isActive && IsCloseEnough()) {
