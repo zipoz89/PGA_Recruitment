@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-//[RequireComponent(typeof(Outline))]
+//general class for clickable objects, It manages things like outline, player controlls while on prompt etc.
+
 public class ClickableObject : MonoBehaviour
 {
     [SerializeField] protected GameObject prompt;
@@ -23,6 +24,8 @@ public class ClickableObject : MonoBehaviour
 
     protected virtual void Start()
     {
+        distanceTo = FindObjectOfType<CharacterController>().transform;
+        objestToparentPrompt = GameObject.Find("HUDCanvas").transform;
         if (outline == null) {
             outline= gameObject.GetComponent<Outline>();
         }

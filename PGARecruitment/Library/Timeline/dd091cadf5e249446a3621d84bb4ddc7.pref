@@ -12,19 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79cb9ecc0d4a6d428ab98a681a33897, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeAreaShownRange: {x: -0.036098093, y: 3.5303936}
+  timeAreaShownRange: {x: -0.04944408, y: 5.344905}
   trackScale: 1
   playRangeEnabled: 0
   timeAreaPlayRange: {x: 3.4028235e+38, y: 3.4028235e+38}
-  windowTime: 0.019999999552965164
-  verticalScroll: 58
+  windowTime: 0
+  verticalScroll: 91
   showMarkerHeader: 1
   sequencerHeaderWidth: 315
   m_Keys:
   - {fileID: 1669232169550233063, guid: dd091cadf5e249446a3621d84bb4ddc7, type: 2}
   - {fileID: 5778181121199964015, guid: dd091cadf5e249446a3621d84bb4ddc7, type: 2}
   - {fileID: -889828756537664263, guid: dd091cadf5e249446a3621d84bb4ddc7, type: 2}
-  - {fileID: -5380096229855999017, guid: dd091cadf5e249446a3621d84bb4ddc7, type: 2}
   - {fileID: 2279610192112629274, guid: dd091cadf5e249446a3621d84bb4ddc7, type: 2}
   - {fileID: -5081388806199976756, guid: dd091cadf5e249446a3621d84bb4ddc7, type: 2}
   - {fileID: -4444623572686642049, guid: dd091cadf5e249446a3621d84bb4ddc7, type: 2}
@@ -249,42 +248,6 @@ MonoBehaviour:
     trackHeightExtension: 0
     m_MarkerTimeStampsKeys: 
     m_MarkerTimeStampsValues: 
-  - collapsed: 0
-    showMarkers: 1
-    showInlineCurves: 0
-    inlineAnimationCurveHeight: 100
-    lastInlineCurveDataID: -1
-    inlineCurvesState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    inlineCurvesShownAreaInsideMargins:
-      serializedVersion: 2
-      x: 1
-      y: 1
-      width: 1
-      height: 1
-    trackHeightExtension: 0
-    m_MarkerTimeStampsKeys: 
-    m_MarkerTimeStampsValues: 
   - collapsed: 1
     showMarkers: 1
     showInlineCurves: 0
@@ -355,8 +318,8 @@ MonoBehaviour:
       width: 1
       height: 1
     trackHeightExtension: 0
-    m_MarkerTimeStampsKeys: 0a4ffcffa84efcff52ebffff644100005c30fefffa2afeff
-    m_MarkerTimeStampsValues: fec79e459224d90826c6b5789224d908dcf493cdf224d9082d06f4905a25d90894245a975a25d908dc56b3075b25d908
+    m_MarkerTimeStampsKeys: 0a4ffcffa84efcff52ebffff644100005c30fefffa2afeff3a6900004469000020690000
+    m_MarkerTimeStampsValues: fec79e459224d90826c6b5789224d908dcf493cdf224d9082d06f4905a25d90894245a975a25d908dc56b3075b25d90877d23b4a8d26d9082139bdec8f26d9086cc9bae78f26d908
   - collapsed: 0
     showMarkers: 1
     showInlineCurves: 0

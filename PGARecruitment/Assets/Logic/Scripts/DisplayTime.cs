@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+// script to put on and  display time with call from other function 
+
 public class DisplayTime : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI textField;

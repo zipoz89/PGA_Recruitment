@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//stores data and events for prompts
 
 [CreateAssetMenu(fileName ="Prompt Data",menuName ="Data Management/Prompt Data")]
 public class PromptData : ScriptableObject

@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
+//class is a timer...
 [RequireComponent(typeof(DisplayTime))]
 public class Timer : MonoBehaviour
 {
@@ -11,7 +13,7 @@ public class Timer : MonoBehaviour
     [SerializeField] private Color noRecordTimeColor;
     [SerializeField] private Image background;
     [SerializeField] private float BGAlpha = 150;
-    float elapsedTime = 0;
+    public float elapsedTime = 0;
     float record = 0;
     bool flagIsSlowerThanRecord = false;
     float startedTimerTime = 0;
@@ -23,6 +25,7 @@ public class Timer : MonoBehaviour
         background.color = new Color(recordTimeColor.r, recordTimeColor.g, recordTimeColor.b, BGAlpha/255);
         record = HighScore.GetHighScore();
         if (record == 0) record = float.MaxValue;
+
         //StartTimer();
     }
 
@@ -38,9 +41,10 @@ public class Timer : MonoBehaviour
     }
 
     [ContextMenu("Stop Timer")]
-    public bool StopTimerAndGetScore() {
-        isCounting = false;        Debug.Log( HighScore.SetHighScoreIfPossible(elapsedTime));
-        return false;
+    public bool StopTimerAndGetIsRecord () {
+        isCounting = false;
+        
+        return HighScore.SetHighScoreIfPossible(elapsedTime);
     }
 
     [SerializeField] private int precision = 3;

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//manages highscorde PlayerPref
 public static class HighScore
 {
     
@@ -9,14 +10,18 @@ public static class HighScore
         return PlayerPrefs.GetFloat("HighScore");
     }
 
+
     public static bool SetHighScoreIfPossible(float score) {
-        Debug.Log(PlayerPrefs.GetFloat("HighScore"));
-        if (PlayerPrefs.GetFloat("HighScore") < score) { 
+        if (score<PlayerPrefs.GetFloat("HighScore")) { 
             PlayerPrefs.SetFloat("HighScore", score);
             return true;
         }
         return false;
 
+    }
+
+    public static void SetHighScoreMax() {
+        PlayerPrefs.SetFloat("HighScore", float.MaxValue);
     }
     //for dev use only
     public static void SetHighScoreUncoditionly(float score) {

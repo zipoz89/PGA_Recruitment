@@ -2,10 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class ItemGem : ClickableObjectManager {
     [SerializeField] private Item item;
     [SerializeField] private PlayerInventory inventory;
 
+    protected override void Start()
+    {
+        base.Start();
+        inventory = FindObjectOfType<PlayerInventory>();
+    }
 
     public override void PromptYes() {
         if (inventory.AddItem(item)) {

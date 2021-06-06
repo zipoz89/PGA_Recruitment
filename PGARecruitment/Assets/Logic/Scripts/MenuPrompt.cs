@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+// specialization of prompt for a menu  
 public class MenuPrompt : PromptOneOption {
 
     [SerializeField] private TextMeshProUGUI highScore;
@@ -12,16 +13,22 @@ public class MenuPrompt : PromptOneOption {
         
         base.Start();
         SetData(data);
-        if (HighScore.GetHighScore() != float.MaxValue)
-            displayTime.DisplayScoreOnTMP(HighScore.GetHighScore(), 3);
-        else highScore.text = "-Not Yet Achived-";
+        SetHighscoreTMP();
 
     }
 
-    public override void SetData(PromptData data) {
-        button.text = data.options[0].optionText;
-        button.eventOnClick = data.options[0].optionEvent;
-        button.tmp.text = button.text;
+    public void SetHighscoreTMP() {
+        if (HighScore.GetHighScore() != float.MaxValue && HighScore.GetHighScore() != 0)
+            displayTime.DisplayScoreOnTMP(HighScore.GetHighScore(), 3);
+        else highScore.text = "-Not Yet Achived-";
+    }
+
+    protected override void Update()
+    {
+        base.Update();
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            Application.Quit();
+        }
     }
 
 }

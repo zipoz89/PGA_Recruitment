@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//specialization of ClickableObject class, adds ability to add item to inventory
 public class ClickableDoor : ClickableObject {
     [SerializeField] private GameObject noKeyPrompt;
     [SerializeField] private PromptData noKeyPromptData;
 
     [SerializeField] private PlayerInventory inventory;
     [SerializeField] private Item keyItem;
-    [SerializeField] private bool consumesKey = true;
     [SerializeField] private bool unlocked = false;
     protected override void Start() {
         base.Start();

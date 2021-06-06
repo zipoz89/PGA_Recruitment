@@ -9,6 +9,8 @@ public enum CursorStyle {
     Hand
 }
 
+//Cursor manager with static methods to change its style
+
 public class CursorManager : MonoBehaviour {
     public CursorStyle currentStyle;
     //need to be in the same order as CursorStyle

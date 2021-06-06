@@ -3,3 +3,6 @@ https://karwisch.itch.io/pxui-basic - menu panel
 http://painterlypack.net/ - textures for models
 https://freesound.org/people/baidonovan/sounds/187352/ - key sound
 https://freesound.org/people/ceberation/sounds/235512/ - door sound
+https://freesound.org/people/yatoimtop/sounds/346835/ - prompt sound
+https://freesound.org/people/MattRuthSound/sounds/562021/ - prompt button hover
+

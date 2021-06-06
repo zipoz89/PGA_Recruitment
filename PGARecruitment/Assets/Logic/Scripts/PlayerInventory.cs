@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//basic inventory class that stores Items in array
+//I havent done displaying of items you have becuase i didnt wanted to overdo and at the sime time didnt want to be just a if check though it would be moderetly easy to do it from now
+
 public class PlayerInventory : MonoBehaviour
 {
     [SerializeField] private int inventorySize = 3;
