@@ -4,7 +4,7 @@ Play in browser:
 https://zipoz.itch.io/eco (If you want good performance be sure to turn on Hardware Acceleration in your browser)
 
 Credits:    
-Jakub Zipoz Piwiński - Game Design, 3D models, proggraming  
+Jakub Zipoz Piwiński - Game Design, 3D models, programming  
 My firend Paweł Szajwaj - Original Soundtrack  
 
 https://freesound.org/people/TimPryor/sounds/188606/ - chest sound 
