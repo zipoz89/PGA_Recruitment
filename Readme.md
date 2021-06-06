@@ -1,4 +1,7 @@
+This is a project that I made as a recruitment task for Pyramid Games Academy
+
 Play in browser:
+
 https://zipoz.itch.io/eco (If you want good performance be sure to turn Hardware Acceleration in your browser)
 
 Credits:
