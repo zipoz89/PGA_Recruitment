@@ -7,7 +7,7 @@ Credits:
 Jakub Zipoz Piwiński - Game Design, 3D models, programming  
 My firend Paweł Szajwaj - Original Soundtrack  
 
-https://freesound.org/people/TimPryor/sounds/188606/ - chest sound 
+https://freesound.org/people/TimPryor/sounds/188606/ - chest sound  
 https://karwisch.itch.io/pxui-basic - menu panel  
 http://painterlypack.net/ - textures for models  
 https://freesound.org/people/baidonovan/sounds/187352/ - key sound  
