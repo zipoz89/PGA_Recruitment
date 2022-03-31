@@ -1,4 +1,4 @@
-This is a project that I made as a recruitment task for Pyramid Games Academy
+This is a project that I made as a recruitment task for Pyramid Games Academy in one week
 
 Play in browser (This is only a prewiew. Some functions may not work/be broken):  
 https://zipoz.itch.io/eco (If you want good performance be sure to turn on Hardware Acceleration in your browser)
